@@ -1,5 +1,6 @@
 package BaseElements;
 
+import WebDriver.Browser;
 import WebDriver.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
@@ -7,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import utilities.ReportUtils;
 
 import java.util.List;
 
@@ -21,10 +23,12 @@ public class BaseElement extends WebDriverManager {
 
     public void click() {
         loadElement().click();
+        waitPageLoading();
     }
 
     public WebElement loadElement() {
         try {
+            ReportUtils.writeInfoLog(controlDescription + "loading");
             WebDriverWait wait = new WebDriverWait(getDriver(), 20);
             wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));
             return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
@@ -104,6 +108,7 @@ public class BaseElement extends WebDriverManager {
 
     public void waitPageLoading() {
         new BaseElement("Loading block ui", "//div[@id='loading-block-ui']").waitDisappear();
+        Browser.waitReady(3000);
     }
 
     public boolean waitDisappear() {
@@ -117,8 +122,10 @@ public class BaseElement extends WebDriverManager {
 
     public void check(String description, Object actualValue, Object expectedValue) {
         if (actualValue.equals(expectedValue)) {
+            ReportUtils.writeInfoLog(description);
             Assert.assertTrue(true);
         } else {
+            ReportUtils.writeFailedLog(description);
             Assert.fail(description);
         }
     }

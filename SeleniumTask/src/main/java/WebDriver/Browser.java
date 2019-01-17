@@ -18,6 +18,7 @@ public class Browser extends WebDriverManager {
 
     public static void waitPageLoading() {
         new BaseElement("Loading block ui", "//div[@id='loading-block-ui']").waitDisappear();
+        waitReady(3000);
     }
 
     public static void waitReady(long milliseconds) {
@@ -86,5 +87,10 @@ public class Browser extends WebDriverManager {
             ReportUtils.writeFailedLog(">>>> " + description);
             Assert.fail(description);
         }
+    }
+
+    public static void clickOnText(String value) {
+        new BaseElement(value, "//*[.='" + value + "']").click();
+        waitPageLoading();
     }
 }

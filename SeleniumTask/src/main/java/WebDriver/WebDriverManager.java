@@ -36,4 +36,8 @@ public class WebDriverManager {
     public static WebDriver getDriver() {
         return webDriver.get();
     }
+
+    public static void closeConnect() {
+        getDriver().quit();
+    }
 }

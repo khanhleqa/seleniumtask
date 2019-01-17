@@ -3,6 +3,9 @@ package page;
 import BaseElements.BaseElement;
 import BaseElements.Button;
 import BaseElements.Text;
+import WebDriver.Browser;
+import WebDriver.WebDriverManager;
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 
 public class SearchPage {
@@ -11,24 +14,24 @@ public class SearchPage {
     BaseElement sortSelectBox = new BaseElement("Sort Select Box", "");
 
     public SearchPage searchByCategory(String category) {
-        BaseElement categoryLocator = new BaseElement("Category", "//li[contains(.='" + category + "')]");
-        categoryLocator.click();
+        Browser.clickOnText(category);
         return this;
     }
 
     public SearchPage searchByLocation(String location) {
-        BaseElement locationLocator = new BaseElement("Location selectBox", "//label[.='Kanton']/following::select[1]");
-        Select locationSelectBox  = (Select) locationLocator.loadElement();
-        locationSelectBox.selectByValue(location);
+        Select locationSelectBox  = new Select(WebDriverManager
+                .getDriver().findElement(By.xpath("//select[contains(@id,'Filter_ddlState')]")));
+        locationSelectBox.selectByVisibleText(location);
         searchButton.click();
+        Browser.waitPageLoading();
         return this;
     }
 
     public SearchPage searchByDistance(String distance) {
-        BaseElement locationLocator = new BaseElement("Location selectBox", "//select[contains(@id,'Filter_ctlLocation_ddlDistance')]");
-        Select locationSelectBox  = (Select) locationLocator.loadElement();
-        locationSelectBox.selectByValue(distance);
-        searchButton.click();
+        Select locationSelectBox  = new Select(WebDriverManager
+                .getDriver().findElement(By.xpath("//select[contains(@id,'Filter_ctlLocation_ddlDistance')]")));
+        locationSelectBox.selectByVisibleText(distance);
+        Browser.waitPageLoading();
         return this;
     }
 

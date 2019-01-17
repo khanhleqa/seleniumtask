@@ -6,12 +6,12 @@ import BaseElements.Text;
 import WebDriver.Browser;
 
 public class LoginPage {
-    Button buttonLogin = new Button("Email textbox", "//div[contains(@name, 'txtEmail')]/input");
-    Text emailTextBox = new Text("Password Textbox", "//input[contains(@type, 'password')]");
-    Text passwordTextBox = new Text("Password textbox", "//a[contains(@id, 'btnLogin')]");
+    Button buttonLogin = new Button("Email textbox", "//a[contains(@id,'btnLogin')]");
+    Text emailTextBox = new Text("Password Textbox", "//label[contains(.,'Mail')]/following::input");
+    Text passwordTextBox = new Text("Password textbox", "//input[contains(@type,'password')]");
     public BaseElement errorMessage = new BaseElement("Error MEssage",
-            "//span[contains(@id, 'ctlEmailValidationBox_txtEmail-error')]");
-    public Button continueButton = new Button("ContinueButton", "//a[contains(@id, 'Continue')]");
+            "//span[contains(@id,'ctlEmailValidationBox_txtEmail-error')]");
+    public Button continueButton = new Button("ContinueButton", "//a[contains(@id,'Continue')]");
 
     public void login(String username, String password) {
         inputEmail(username);

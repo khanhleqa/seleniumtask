@@ -4,8 +4,7 @@ import BaseElements.Table;
 import WebDriver.Browser;
 import WebDriver.PropertiesUtils;
 import WebDriver.WebDriverManager;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import page.HomePage;
 import page.LoginPage;
 import page.SearchPage;
@@ -39,10 +38,12 @@ public class Search {
 
         Browser.navigateToUrl(loginURL);
         loginPage.inputEmail(invalidUserName);
+        loginPage.continueButton.click();
         loginPage.errorMessage.shouldBeDisplayed();
 
         loginPage.login(validUser, validPassword);
 
+        homePage.launch(url);
         search.searchByCategory(categoryName)
                 .searchByDistance(distance)
                 .searchByLocation(location)
@@ -50,5 +51,10 @@ public class Search {
 
         Table result = new Table("Table result", null);
         result.shouldHaveRowCounts(numberOfRow);
+    }
+
+    @AfterClass
+    public void afterClass() {
+        WebDriverManager.closeConnect();
     }
 }
