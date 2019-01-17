@@ -28,11 +28,12 @@ public class BaseElement extends WebDriverManager {
 
     public WebElement loadElement() {
         try {
-            ReportUtils.writeInfoLog(controlDescription + "loading");
+            ReportUtils.writeInfoLog(controlDescription + " loading");
             WebDriverWait wait = new WebDriverWait(getDriver(), 20);
             wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpath)));
             return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
         } catch (TimeoutException ex) {
+            ReportUtils.writeFailedLog(controlDescription + " is not displayed");
             return null;
         }
     }

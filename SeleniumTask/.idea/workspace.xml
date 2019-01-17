@@ -42,12 +42,9 @@
       <file leaf-file-name="BaseElement.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/BaseElements/BaseElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="98" column="5" lean-forward="false" selection-start-line="80" selection-start-column="4" selection-end-line="98" selection-end-column="5" />
-              <folding>
-                <element signature="e#1522#1523#0" expanded="true" />
-                <element signature="e#1572#1573#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="195">
+              <caret line="35" column="39" lean-forward="false" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -55,8 +52,8 @@
       <file leaf-file-name="SearchPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/page/SearchPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+            <state relative-caret-position="144">
+              <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -99,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/testCases/Search.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="194">
-              <caret line="48" column="27" lean-forward="true" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+              <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -138,11 +135,11 @@
         <option value="$PROJECT_DIR$/src/main/java/WebDriver/WebDriverManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/page/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/BaseElements/Text.java" />
-        <option value="$PROJECT_DIR$/src/test/java/testCases/Search.java" />
-        <option value="$PROJECT_DIR$/src/main/java/BaseElements/BaseElement.java" />
         <option value="$PROJECT_DIR$/src/main/java/WebDriver/Browser.java" />
-        <option value="$PROJECT_DIR$/src/test/java/page/SearchPage.java" />
         <option value="$PROJECT_DIR$/config.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/BaseElements/BaseElement.java" />
+        <option value="$PROJECT_DIR$/src/test/java/page/SearchPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testCases/Search.java" />
       </list>
     </option>
   </component>
@@ -616,24 +613,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Search - 2019.01.18 at 00h 20m 55s.xml">
-      <configuration name="Search" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Search - 2019.01.18 at 00h 23m 47s.xml">
-      <configuration name="Search" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Search - 2019.01.18 at 00h 26m 34s.xml">
-      <configuration name="Search" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Search - 2019.01.18 at 00h 28m 11s.xml">
-      <configuration name="Search" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Search - 2019.01.18 at 00h 33m 04s.xml">
-      <configuration name="Search" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Search - 2019.01.18 at 00h 35m 32s.xml">
-      <configuration name="Search" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="Search - 2019.01.18 at 00h 38m 56s.xml">
       <configuration name="Search" configurationId="TestNG" />
     </history-entry>
@@ -644,6 +623,24 @@
       <configuration name="Search" configurationId="TestNG" />
     </history-entry>
     <history-entry file="Search - 2019.01.18 at 00h 52m 56s.xml">
+      <configuration name="Search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Search - 2019.01.18 at 00h 56m 38s.xml">
+      <configuration name="Search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Search - 2019.01.18 at 00h 59m 22s.xml">
+      <configuration name="Search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Search - 2019.01.18 at 01h 11m 08s.xml">
+      <configuration name="Search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Search - 2019.01.18 at 01h 13m 55s.xml">
+      <configuration name="Search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Search - 2019.01.18 at 01h 16m 47s.xml">
+      <configuration name="Search" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Search - 2019.01.18 at 01h 21m 27s.xml">
       <configuration name="Search" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -726,10 +723,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1260">
           <caret line="98" column="5" lean-forward="true" selection-start-line="80" selection-start-column="4" selection-end-line="98" selection-end-column="5" />
-          <folding>
-            <element signature="e#1522#1523#0" expanded="true" />
-            <element signature="e#1572#1573#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -803,17 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BaseElements/BaseElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="98" column="5" lean-forward="false" selection-start-line="80" selection-start-column="4" selection-end-line="98" selection-end-column="5" />
-          <folding>
-            <element signature="e#1522#1523#0" expanded="true" />
-            <element signature="e#1572#1573#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/WebDriver/Browser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -849,18 +832,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/BaseElements/BaseElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="35" column="39" lean-forward="false" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testCases/Search.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
-          <caret line="48" column="27" lean-forward="true" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+          <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/page/SearchPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state relative-caret-position="144">
+          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
           <folding />
         </state>
       </provider>
